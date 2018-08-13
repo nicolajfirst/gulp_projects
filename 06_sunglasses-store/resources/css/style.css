@@ -569,18 +569,18 @@ textarea:-moz-placeholder {
 
 
 .js--form-left {
-	opacity: .7;
+	opacity: 0;
+	animation-delay: .2s; 
 	animation-duration: 1s;
-	animation-delay: .4s; 
 }
 
 .js--form-left.animated {
-	opacity: .7; 
+	opacity: 1; 
 }
 
 .js--form-right {
 	opacity: 0;
-	animation-delay: .6s;
+	animation-delay: .4s;
 	animation-duration: 1s; 
 }
 
@@ -588,15 +588,7 @@ textarea:-moz-placeholder {
 	opacity: 1; 
 }
 
-.js--form-button {
-	opacity: 0;
-	animation-delay: 1s;
-	animation-duration: 1s; 
-}
 
-.js--form-button.animated {
-	opacity: 1; 
-}
 
 
 
