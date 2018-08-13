@@ -86,6 +86,24 @@ $(document).ready(function() {
   		offset: '50%'
   	});
 
+    $('.js--form-left').waypoint(function(direction) {
+      $('.js--form-left').addClass('animated bounceInLeft');
+    }, {
+      offset: '50%'
+    });
+
+    $('.js--form-right').waypoint(function(direction) {
+      $('.js--form-right').addClass('animated bounceInRight');
+    }, {
+      offset: '50%'
+    });
+
+    $('.js--form-button').waypoint(function(direction) {
+      $('.js--form-button').addClass('animated bounceInLeft');
+    }, {
+      offset: '50%'
+    });
+
   	$('.js--nav-icon').click(function() {
   		var nav = $('.js--main-nav');
   		var icon = $('.js--nav-icon i');
@@ -104,13 +122,12 @@ $(document).ready(function() {
 
     $('.testimonials-wrapper').slick({
       autoplay: true,
-      autoplaySpeed: 2500,
+      autoplaySpeed: 1500,
       speed: 1000,
       dots: true,
       cssEase: 'ease-out',
       vertical: true,
       arrows: false
     });
-
-
+    
 });

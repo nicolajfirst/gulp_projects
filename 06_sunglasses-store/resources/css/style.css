@@ -35,30 +35,34 @@ h1, h2 {
 	letter-spacing: 1px;
 	font-weight: 300;
 	text-transform: uppercase;
+	
 }
 
 h1 {
-	margin: 0 0 20px 0;
+	margin: 0 auto;
 	color: #E1E1E1;
-	font-size: 200%;
+	font-size: 160%;
 	word-spacing: 3px;
+	width: 80%;
+	
 }
 
 h2 {
-	font-size: 160%;
+	font-size: 140%;
 	word-spacing: 2px;
 	text-align: center;
 	margin-bottom: 30px;
+	font-family: 'Oxygen', sans-serif;
 }
 
 h2:after {
 	content: "";
 	display: block;
 	height: 2px;
-	background-color: #FF7A00;
-	width: 50px;
+	background-color: #cd8431;
+	width: 60px;
 	margin: 0 auto;
-	margin-top: 30px;
+	margin-top: 20px;
 }
 
 h3 {
@@ -87,7 +91,7 @@ h3 {
 
 .header {
 	/*background:#E8E8D2;*/
-	background-image: linear-gradient(to right top, rgba(238,243,250, 0.8), rgba(0,189,255, 0.8)), url('../img/bg-header.jpg');
+	background-image: linear-gradient(to right top, rgba(160,195,218, 0.8), rgba(58,114,150, 0.8)), url('../img/bg-header.jpg');
 	background-size: 100%;
 	background-position: center;
 	height: 100vh;	
@@ -461,4 +465,139 @@ cite {
 .ti-stars .ion-android-star--white {
 	color: #fff;
 }
+
+
+/*----------------------------*/
+/*------------FORM----------------*/
+/*---------------------------*/
+.section-form {
+	background-color: #efedf3;
+}
+.contact-form {
+	width: 60%;
+	margin: 0 auto;
+	padding: 30px;
+	text-align: left;
+	background-image: linear-gradient(to bottom, #9888ae, #e7e3ec) ;
+	font-size: 12px;
+	-webkit-box-shadow: 7px 11px 48px -6px rgba(177,171,176,1);
+	-moz-box-shadow: 7px 11px 48px -6px rgba(177,171,176,1);
+	box-shadow: 7px 11px 48px -6px rgba(177,171,176,1);
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+	width: 100%;
+	padding: 15px;
+	border-radius: 5px;
+	border: 1px solid #f8f7fa;
+	font-size: 12px;
+	margin-bottom: 4%;
+}
+
+input[type=submit] {
+	display: block;
+    margin: 0 auto;
+    font-size: 12px;
+    background-color: #756290;
+    padding: 2% 3%;
+    border: none;
+    border-radius: 100px;
+    color: #f8f7fa;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(0,0,0, .15);
+    transition: all .2s;
+}
+
+
+input[type=submit]:hover {
+	box-shadow: 0 10px 30px rgba(0,0,0, .15);
+}
+
+input[type=submit]:active {
+	transform: translateY(1px);
+	box-shadow: 0 10px 20px rgba(0,0,0, .3);
+}
+
+select {
+  color: #ccc;
+	font-family: "Comic Sans MS", sans-serif;
+	background-color: #f8f7fa;
+}
+
+select option {
+	font-size: 12px;
+	
+}
+
+textarea {
+	height: 19em;
+	background-color: #f8f7fa;
+	outline: none;
+	-moz-appearance: none;
+}
+
+label {
+	line-height: 160%;
+	vertical-align: bottom; 
+}
+
+*:focus {
+	outline:none;
+}
+
+input::-webkit-input-placeholder {
+	color: #ccc;
+	font-family: "Comic Sans MS", sans-serif;
+}
+input:-moz-placeholder {
+	color: #ccc;
+	font-family: "Comic Sans MS", sans-serif;
+}
+
+textarea::-webkit-input-placeholder {
+	color: #ccc;
+	font-family: "Comic Sans MS", sans-serif;
+}
+
+textarea:-moz-placeholder {
+	color: #ccc;
+	font-family: "Comic Sans MS", sans-serif;
+}
+
+
+.js--form-left {
+	opacity: .7;
+	animation-duration: 1s;
+	animation-delay: .4s; 
+}
+
+.js--form-left.animated {
+	opacity: .7; 
+}
+
+.js--form-right {
+	opacity: 0;
+	animation-delay: .6s;
+	animation-duration: 1s; 
+}
+
+.js--form-right.animated {
+	opacity: 1; 
+}
+
+.js--form-button {
+	opacity: 0;
+	animation-delay: 1s;
+	animation-duration: 1s; 
+}
+
+.js--form-button.animated {
+	opacity: 1; 
+}
+
+
+
 
