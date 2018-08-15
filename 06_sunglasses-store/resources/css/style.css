@@ -156,14 +156,15 @@ h3 {
 	color: #FFF;
 	font-size: 90%;
 	border-bottom: 1px solid transparent;
-	transition: translate 0.2s, background-color 0.3s, color 0.2s;
+	border: 1px solid transparent;
+	transition: translate 0.2s, border-color 0.3s, color 0.2s;
 }
 
 .main-nav li a:hover,
 .main-nav li a:active {
 	transform: translate(5px);
-	color: orange;
-	background-color: #00DCFF;
+	color: #e0ecf6;
+	border: 1px solid #e0ecf6;
 }
 
 /*----------------------------*/
@@ -729,5 +730,84 @@ textarea:-moz-placeholder {
 	margin-top: 20px;
 }
 
+/*----------------------------*/
+/*------------FOOTER----------------*/
+/*---------------------------*/
+.footer {
+	background-color: #2a2a2a;
+	padding: 3em 2em;
+	color: pink;
+}
 
+.footer__about {
+	width: 100%;
+}
 
+.footer__text {
+  	width: 100%;	
+  	float: right;	
+}		
+
+.footer__ph {
+	width: 70%;	
+	font-size: 12px;	
+	color: #ccc;
+}
+
+.footer__list {	
+	list-style: none;
+	width: 75%;	
+	float: left;
+}
+
+.footer__item {
+	width: 6em;	
+	display: inline-block;
+	margin-right: 2%;		
+}
+
+.footer__link {
+	text-decoration: none;
+	display: inline-block;	
+	padding: 5%  5.5%;
+	font-size: 12px;
+	color: pink;
+	border: 1px solid transparent;
+	transition: all 2s; 		
+}
+
+.footer__link:hover {
+	border: 1px solid pink;
+}
+
+.heading-quaternary {	
+	font-size: 12px;
+	font-weight: 400;
+	text-transform: capitalize;	
+	margin-bottom: 3%;
+	transition: all 2s;			
+}
+
+.footer-socials {
+	display: inline-block;	
+}
+
+.footer__list--socials {
+	display: block;
+	width: 100%;
+	margin-top: .5em;
+}
+
+.socials-item {
+	display: inline-block;
+	margin-right: 9%;
+}
+
+.socials-item:last-child {
+	margin-right: 0;
+}
+
+.footer-icon {
+	font-size: 120%;
+			
+}
