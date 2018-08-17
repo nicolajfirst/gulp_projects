@@ -612,7 +612,7 @@ input[type=submit] {
 	display: block;
     margin: 0 auto;
     font-size: 2rem;
-    background-color: #9f9acf; 
+    background-color: rgba(159, 154, 207, .8); 
 	color: #fff;
 	font-family: 700 2rem "Proxima Nova", sans-serif;
 	text-transform: uppercase;
