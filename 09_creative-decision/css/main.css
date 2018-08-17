@@ -568,3 +568,105 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 0 1.65%;
 	float: left; 
 }
+
+/*----------------------------*/
+/*------------FORM---------------*/
+/*---------------------------*/
+
+.section-form {
+	padding: 5rem 0;
+	background-image: linear-gradient(rgba(192,188,209, .8), rgba(192,188,209, .8)), url("../img/form-bg.jpg");
+	background-size: cover;
+}
+
+.contact-form {
+	width: 60%;
+	margin: 0 auto;
+	text-align: left;
+	font-size: 1.2rem;
+}
+
+.span-1-of-2 {
+	width: 49%;
+	margin: 0;
+	float: left;
+}
+
+.span-1-of-2:first-child {
+	margin-right: 2%;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+	width: 100%;
+	padding: 1.5rem;
+	border-radius: .3rem;
+	border: 1px solid transparent;
+	font-size: 1.2em;
+	margin-bottom: 4%;
+	background-color: rgba(214,212,223, .5); 
+}
+
+input[type=submit] {
+	display: block;
+    margin: 0 auto;
+    font-size: 2rem;
+    background-color: #9f9acf; 
+	color: #fff;
+	font-family: 700 2rem "Proxima Nova", sans-serif;
+	text-transform: uppercase;
+	border: 1px solid #fff;
+	font-weight: bold;
+	font-style: normal;
+}
+
+
+input[type=submit]:hover, .btn:hover {
+	box-shadow: 0 10px 30px rgba(255,255,255, .15);
+}
+
+input[type=submit]:active, .btn:active {
+	transform: translateY(1px);
+	box-shadow: 0 10px 20px rgba(255,255,255, .3);
+}
+
+textarea {
+	height: 19em;
+	background-image: linear-gradient(rgba(159,154,297, .15));
+	outline: none;
+	-moz-appearance: none;
+}
+
+label {
+	line-height: 160%;
+	vertical-align: bottom; 
+}
+
+*:focus {
+	outline:none;
+}
+
+input::-webkit-input-placeholder {
+	color: rgba(255,255,255, .8);
+	font-family: "PT Sans", sans-serif;
+	font-style: italic;
+}
+input:-moz-placeholder {
+	color: rgba(255,255,255, .8);
+	font-family: "PT Sans", sans-serif;
+	font-style: italic;
+}
+
+textarea::-webkit-input-placeholder {
+	color: rgba(255,255,255, .8);
+	font-family: "PT Sans", sans-serif;
+	font-style: italic;
+}
+
+textarea:-moz-placeholder {
+	color: rgba(255,255,255, .8);
+	font-family: "PT Sans", sans-serif;
+	font-style: italic;
+}
+	
