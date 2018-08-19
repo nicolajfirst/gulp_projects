@@ -7,6 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="fonts/fontawesome-icons/css/all.min.css">
 	<link rel="stylesheet" href="vendors/slick/slick.css">
 	<link rel="stylesheet" href="vendors/slick/slick-theme.css">
+	<link rel="stylesheet" href="vendors/animate.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<title>Creative Solution</title>
 </head>
@@ -21,18 +22,18 @@
 					<div class="header__right">
 						<nav class="header-nav">
 							<ul class="header__list">
-								<li class="header__item"><a href="" class="header__link">Home</a></li>
-								<li class="header__item"><a href="" class="header__link">About</a></li>
-								<li class="header__item"><a href="" class="header__link">Services</a></li>
-								<li class="header__item"><a href="" class="header__link">Works</a></li>
-								<li class="header__item"><a href="" class="header__link">Contact</a></li>
+								<li class="header__item"><a href="#" class="header__link">Home</a></li>
+								<li class="header__item"><a href="#about" class="header__link">About</a></li>
+								<li class="header__item"><a href="#services" class="header__link">Services</a></li>
+								<li class="header__item"><a href="#works" class="header__link">Works</a></li>
+								<li class="header__item"><a href="#contact" class="header__link">Contact</a></li>
 							</ul>
 						</nav>
 					</div>
 				</div>
 			<div class="header__text-box">
-				<h1 class="heading-primary">Creative digital project</h1>
-				<p class="ph-primary"><span class="ph-primary--span">Duis mollis, est non commodo luctus,</span>
+				<h1 class="heading-primary jello animated">Creative digital project</h1>
+				<p class="ph-primary fadeInUp animated"><span class="ph-primary--span">Duis mollis, est non commodo luctus,</span>
  nisi erat porttitor ligula, eget lacinia odio sem nec elit.
 				</p>
 		</div>
@@ -40,14 +41,14 @@
 		</header>
 		<section class="section-about">
 			<div class="container">
-				<div class="about">
+				<div class="about" id="about">
 					<div class="about__left">
 						<div class="about__img">
 							<img src="img/about-logo.png" class="about__logo">
 							<h2 class="heading-secondary">About us</h2>
 						</div>
 					</div>
-					<div class="about__right">
+					<div class="about__right js--wp-1">
 						<div class="about__text">
 							<p class="ph-about">Nullam quis risus eget urna mollis ornare vel eu leo. Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
 							<p class="ph-about">Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.</p>
@@ -57,7 +58,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="section-service">
+		<section class="section-service" id="services">
 			<div class="container">
 				<div class="service">
 					<div class="service__left">
@@ -67,13 +68,13 @@
 							<p class="service-ph">Cras mattis consectetur purus sit amet fermentum.
 							</p>
 						</div>
-						<div class="service__block">
+						<div class="service__block js--wp-2">
 							<img src="img/service-icon-2.png" class="service__img">
 							<h4 class="heading-quaternary">Web development</h4>
 							<p class="service-ph">Cras mattis consectetur purus sit amet fermentum.
 							</p>
 						</div>
-						<div class="service__block">
+						<div class="service__block js--wp-2">
 							<img src="img/service-icon-3.png" class="service__img">
 							<h4 class="heading-quaternary">Seo &amp; Marketing</h4>
 							<p class="service-ph">Cras mattis consectetur purus sit amet fermentum.
@@ -97,11 +98,11 @@
 			</div>
 		</section>
 
-		<section class="section-slide">
+		<section class="section-slide" id="works">
 			<div class="container">
 				<div class="heading-box">
 					<img src="img/recent.png" class="slide__img md-bottom">
-					<h2 class="heading-secondary big-bottom">Recent works</h2>
+					<h2 class="heading-secondary big-bottom ">Recent works</h2>
 				</div>
 				<div class="slider-box__wrap" id="js--slider">
 					<div class="slider-box">
@@ -182,7 +183,7 @@
 			</div>
 		</section>
 
-		<section class="section-form">
+		<section class="section-form" id="contact">
 			<div class="heading-box">
 				<img src="img/touch.png" class="slide__img md-bottom">
 				<h2 class="heading-secondary huge-bottom">Get in touch</h2>
@@ -203,7 +204,7 @@
 					<input type="submit" value="Send message" class="btn btn--form">
 				</div>
 			</form>
-			<div class="move-icon page-up-arrow">
+			<div class="move-icon page-up-arrow js--wp-4">
 				<a href="#" class="icon-arrows-up-double-33"></a>
 			</div>
 			<div class="slide-block">
@@ -250,6 +251,7 @@
 		
 	</footer>
 	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
 	<script type="text/javascript" src="vendors/slick/slick.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 </body>
