@@ -4,6 +4,9 @@
 	<meta charset="UTF-8">
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="vendors/linea_arrows/linea-arrows.css">
+	<link rel="stylesheet" type="text/css" href="fonts/fontawesome-icons/css/all.min.css">
+	<link rel="stylesheet" href="vendors/slick/slick.css">
+	<link rel="stylesheet" href="vendors/slick/slick-theme.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<title>Creative Solution</title>
 </head>
@@ -100,9 +103,21 @@
 					<img src="img/recent.png" class="slide__img md-bottom">
 					<h2 class="heading-secondary big-bottom">Recent works</h2>
 				</div>
-				<div class="slider-box">
-					<img src="img/slide-img.jpg" class="slider-box__img">
+				<div class="slider-box__wrap" id="js--slider">
+					<div class="slider-box">
+						<img src="img/slide-4.jpg" class="slider__img">
+					</div>
+					<div class="slider-box">
+						<img src="img/slide-1.jpg" class="slider__img">
+					</div>
+					<div class="slider-box">
+						<img src="img/slide-2.jpg" class="slider__img">
+					</div>
+					<div class="slider-box">
+						<img src="img/slide-3.jpg" class="slider__img">
+					</div>
 				</div>
+				
 				<div class="slide__btn">
 					<a href="#" class="btn btn--white">View gallery</a>
 				</div>
@@ -123,11 +138,11 @@
 							</div>
 							<h4 class="heading-quaternary heading-quaternary--purple ">Miguel O'brien</h4>
 							<p class="service-ph">CEO &amp; Founder</p>
-							<ul class="team__socials socials--first">
-								<li class="team__social-item"><a href="#" class="socials__link">in</a></li>
-								<li class="team__social-item"><a href="#" class="socials__link">g+</a></li>
-								<li class="team__social-item"><a href="#" class="socials__link">fb</a></li>
-								<li class="team__social-item"><a href="#" class="socials__link">tw</a></li>
+							<ul class="socials__list socials--first">
+								<li class="social__item"><a href="#" class="social__link"><i class="fab fa-linkedin-in"></i></a></li>
+								<li class="social__item"><a href="#" class="social__link"><i class="fab fa-google-plus-g"></i></a></li>
+								<li class="social__item"><a href="#" class="social__link"><i class="fab fa-facebook-f"></i></a></li>
+								<li class="social__item"><a href="#" class="social__link"><i class="fab fa-twitter"></i></a></li>
 							</ul>
 						</div>
 					</div>
@@ -138,12 +153,12 @@
 							</div>
 							<h4 class="heading-quaternary heading-quaternary--purple ">Jackie Caroll</h4>
 							<p class="service-ph">Art Director</p>
-							<ul class="team__socials">
-								<li class="team__social-item"><a href="#" class="socials__link">be</a></li>
-								<li class="team__social-item"><a href="#" class="socials__link">in</a></li>
-								<li class="team__social-item"><a href="#" class="socials__link">g+</a></li>
-								<li class="team__social-item"><a href="#" class="socials__link">fb</a></li>
-								<li class="team__social-item"><a href="#" class="socials__link">tw</a></li>
+							<ul class="socials__list">
+								<li class="social__item"><a href="#" class="social__link"><i class="fab fa-github"></i></a></li>
+								<li class="social__item"><a href="#" class="social__link"><i class="fab fa-linkedin-in"></i></a></li>
+								<li class="social__item"><a href="#" class="social__link"><i class="fab fa-google-plus-g"></i></a></li>
+								<li class="social__item"><a href="#" class="social__link"><i class="fab fa-facebook-f"></i></a></li>
+								<li class="social__item"><a href="#" class="social__link"><i class="fab fa-twitter"></i></a></li>
 							</ul>
 						</div>
 					</div>
@@ -154,12 +169,12 @@
 							</div>
 							<h4 class="heading-quaternary heading-quaternary--purple ">Ida Morrison</h4>
 							<p class="service-ph">Designer</p>
-							<ul class="team__socials">
-								<li class="team__social-item"><a href="#" class="socials__link">be</a></li>
-								<li class="team__social-item"><a href="#" class="socials__link">in</a></li>
-								<li class="team__social-item"><a href="#" class="socials__link">g+</a></li>
-								<li class="team__social-item"><a href="#" class="socials__link">fb</a></li>
-								<li class="team__social-item"><a href="#" class="socials__link">tw</a></li>
+							<ul class="socials__list">
+								<li class="social__item"><a href="#" class="social__link"><i class="fab fa-github"></i></a></li>
+								<li class="social__item"><a href="#" class="social__link"><i class="fab fa-linkedin-in"></i></a></li>
+								<li class="social__item"><a href="#" class="social__link"><i class="fab fa-google-plus-g"></i></a></li>
+								<li class="social__item"><a href="#" class="social__link"><i class="fab fa-facebook-f"></i></a></li>
+								<li class="social__item"><a href="#" class="social__link"><i class="fab fa-twitter"></i></a></li>
 							</ul>
 						</div>
 					</div>
@@ -201,11 +216,41 @@
 					<span>Indonesia</span>  
 				</div>
 			</div>
+			<div class="slide-block slide-block--phone">
+				<div class="slide-block__icon">
+					<img src="img/phone.png">
+				</div>
+				<div class="slide-block__txt">
+					<span>&nbsp;</span>
+					<span>+0-344-557-78-99</span>
+					<span>&nbsp;</span>
+				</div>
+			</div>
 		</section>
 	</div>
-	<!-- <footer class="footer">
-		<h4>Nikolay Gaidash</h4>
-		<div class="rights">&copy; All rights reserved</div>
-	</footer> -->
+	<footer class="footer">
+		<div class="container">
+		<div class="footer__wrap">
+		<div class="footer__left">
+			<div class="footer__txt">&copy; 2018 tulusdriyo. All rights reserved</div>
+		</div>
+		<div class="footer__right">
+			<ul class="socials__list socials__list--footer">
+				<li class="social__item"><a href="#" class="social__link"><i class="fab fa-github"></i></a></li>
+				<li class="social__item"><a href="#" class="social__link"><i class="fab fa-linkedin-in"></i></a></li>
+				<li class="social__item"><a href="#" class="social__link"><i class="fab fa-google-plus-g"></i></a></li>
+				<li class="social__item"><a href="#" class="social__link"><i class="fab fa-facebook-f"></i></a></li>
+				<li class="social__item"><a href="#" class="social__link"><i class="fab fa-twitter"></i></a></li>
+			</ul>
+		</div>	
+		</div>	
+		</div>
+		
+		
+		
+	</footer>
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="vendors/slick/slick.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
