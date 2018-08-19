@@ -29,6 +29,42 @@ section {
 	padding: 80px 0;
 }
 
+.socials__list--footer {
+	display: inline-block;
+}
+
+.social__item {
+	position: relative;
+	display: inline-block;
+	width: 2rem;
+	height: 2rem;
+	border-radius: 50%;
+	transition: all .2s;
+}
+
+.social__item:hover {
+	background-color: rgba(255, 255, 255, .7);
+}
+
+.social__item:hover .fab {
+	color: #000;
+} 
+
+.socials__link {
+	text-decoration: none;
+	font-size: 2rem;
+}
+
+.fab {
+	font-size: 120%;
+    color: pink;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
 /*---------HEADINGS-----------*/
 
 h1, h2 {
@@ -129,11 +165,37 @@ h3 {
 }
 
 .logo {
-
 	height: 70px;
 	width: auto;
 	float: left;
 	margin-top: 19px;
+}
+
+.logo__link {
+	display: block;
+	text-decoration: none;
+	color: yellow;
+	font-family: 'Do Hyeon', sans-serif;
+	font-size: 2.2em;
+}
+
+.logo__link span {
+	margin-top: -.8em;
+	display: block;
+	font-size: .36em;
+	letter-spacing: .4em;
+	font-family: 'Oxygen', sans-serif;
+	font-weight: bold;
+	text-align: right;
+	padding-right: .5em;
+	color: #fff;
+}
+
+.fas {
+	display: inline-block;
+	transform: rotate(-90deg);
+	color: rgba(255,221,0, 0.8);
+	font-size: .8em;
 }
 
 .main-nav {
@@ -488,10 +550,10 @@ cite {
 	color: #fff;
 }
 
-
 /*----------------------------*/
 /*------------FORM----------------*/
 /*---------------------------*/
+
 .section-form {
 	background-color: #efedf3;
 }
@@ -780,7 +842,8 @@ textarea:-moz-placeholder {
 	border: 1px solid pink;
 }
 
-.heading-quaternary {	
+.heading-quaternary {
+	text-align: center;	
 	font-size: 12px;
 	font-weight: 400;
 	text-transform: capitalize;	

@@ -552,7 +552,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .social__item:hover .fab {
-	color: #b5b1da;
+	color: #ccc;
 } 
 
 .socials__link {
@@ -900,14 +900,6 @@ textarea:-moz-placeholder {
 }
 
 .js--wp-2.animated {
-	opacity: 1;
-}
-
-.js--wp-3 {
-	opacity: 0;
-}
-
-.js--wp-3.animated {
 	opacity: 1;
 }
 
